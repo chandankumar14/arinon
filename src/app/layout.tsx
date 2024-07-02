@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import 'aos/dist/aos.css'
 
 export const metadata: Metadata = {
   title: "Arinon",

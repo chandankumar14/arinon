@@ -1,8 +1,9 @@
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel, } from '@headlessui/react'
 import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+
 const products = [
   { name: 'Logistics', description: 'Get a better understanding ', href: '#', icon: ChartPieIcon },
   { name: 'Healthcare', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
@@ -28,13 +29,12 @@ export default function Header() {
   const [isOpenNav, setIsOpenNav] = useState(false);
   const [openMegaMenu, setOpenMegaMenu] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
+ 
   return (
     <main>
-      <header className="bg-gray-50 fixed top-0 w-full  shadow-md z-10">
+      <header className="bg-gray-50 fixed top-0 w-full h-20  shadow-md z-10">
         <nav className="mx-auto flex max-w-7xl items-center p-3 lg:px-8" aria-label="Global">
-
-          <div className="px-10 lg:flex-initial">
+          <div className="px-10 lg:flex-2">
             <a href="#" className="-m-1.5 p-1.5">
               <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
             </a>
