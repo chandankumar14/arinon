@@ -1,9 +1,10 @@
 "use client"
 import { useEffect, useState } from "react";
+import { } from "../../public/assets/Icons/AI_ML.png"
 import { Dialog, DialogPanel, Disclosure, DisclosureButton, DisclosurePanel, Popover, PopoverButton, PopoverGroup, PopoverPanel, } from '@headlessui/react'
 import { ArrowPathIcon, Bars3Icon, ChartPieIcon, CursorArrowRaysIcon, FingerPrintIcon, SquaresPlusIcon, XMarkIcon, } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-
+import Image from "next/image";
 const products = [
   { name: 'Logistics', description: 'Get a better understanding ', href: '#', icon: ChartPieIcon },
   { name: 'Healthcare', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
@@ -14,22 +15,27 @@ const products = [
   { name: 'Education', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
   { name: 'Finance and banking', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
   { name: 'Internet of things(IOT)', description: 'Get a better understanding', href: '#', icon: ArrowPathIcon },
-
+]
+const Services = [
+  { name: "AI ML", Icon: require("../../public/assets/Icons/AI_ML.png") },
+  { name: "AR VR", Icon: require("../../public/assets/Icons/AR_VR.png") },
+  { name: "Block Chain", Icon: require("../../public/assets/Icons/blockchain.png") },
+  { name: "Cloud Computing", Icon: require("../../public/assets/Icons/cloud-computing.png") },
+  { name: "Cyber Security", Icon: require("../../public/assets/Icons/cyber-security.png") },
+  { name: "Devops", Icon: require("../../public/assets/Icons/devops.png") },
+  { name: "Mobile Development", Icon: require("../../public/assets/Icons/mobile-development.png") },
+  { name: "MVP Development", Icon: require("../../public/assets/Icons/mvp_development.png") },
+  { name: "Web Development", Icon: require("../../public/assets/Icons/webDevelopment.png") },
+  { name: "Project Management", Icon: require("../../public/assets/Icons/project-management.png") },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '#', icon: PhoneIcon },
 ]
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
 export default function Header() {
-  const [isOpenNav, setIsOpenNav] = useState(false);
-  const [openMegaMenu, setOpenMegaMenu] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
- 
+
   return (
     <main>
       <header className="bg-gray-50 fixed top-0 w-full h-20  shadow-md z-10">
@@ -52,12 +58,10 @@ export default function Header() {
 
           <div className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
-              <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-
+              <PopoverButton className="flex items-center gap-x-1 ring-0 text-sm font-semibold leading-6 text-gray-900">
                 Industries
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
               </PopoverButton>
-
               <PopoverPanel
                 transition
                 className="absolute top-full z-10 mt-4 w-screen  overflow-hidden rounded-xl
@@ -88,33 +92,32 @@ export default function Header() {
               </PopoverPanel>
             </Popover>
             <Popover className="relative">
-              <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
+              <PopoverButton className="flex items-center gap-x-1 ring-0 text-sm font-semibold leading-6 text-gray-900">
                 Services
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
               </PopoverButton>
-
               <PopoverPanel
                 transition
                 className="absolute top-full z-10 mt-4 w-screen  overflow-hidden rounded-xl
-                 bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 
+                 bg-gray-50 shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 
                  data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 
                  data-[enter]:ease-out data-[leave]:ease-in"
               >
-                <div className="p-4 lg:grid grid-cols-3 float-start">
-                  {products.map((item) => (
+                <div className="p-4 lg:grid grid-cols-3 sm:grid-cols-3 float-start">
+                  {Services.map((item) => (
                     <div
                       key={item.name}
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-300"
                     >
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                      <div className="flex h-16 w-16 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <Image src={item.Icon} alt="" className="h-16 w-16 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
-                        <a href={item.href} className="block font-semibold text-gray-900">
+                        <a href="" className="block font-semibold text-gray-900">
                           {item.name}
                           <span className="absolute inset-0" />
                         </a>
-                        <p className="mt-1 text-gray-600">{item.description}</p>
+                        <p className="mt-1 text-gray-600">Description Description</p>
                       </div>
                     </div>
                   ))}
@@ -176,7 +179,6 @@ export default function Header() {
                         <DisclosureButton className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
                           Product
                           <ChevronDownIcon
-                            className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
                             aria-hidden="true"
                           />
                         </DisclosureButton>
