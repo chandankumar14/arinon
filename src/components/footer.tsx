@@ -2,97 +2,17 @@
 export default function Footer() {
     return (
 
-        <footer className="w-full bg-black">
+        <footer className="w-full bg-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col xl:flex-row gap-8 pt-14 pb-14">
                     <div className="grid grid-cols-2 sm:grid-cols-3 min-[890px]:grid-cols-5 lg:grid-cols-5 gap-4 xl:gap-8 w-full max-w-sm mx-auto sm:max-w-3xl min-[890px]:max-w-full">
                         <div className="w-full  text-left">
-                            <h4 className="text-xl text-gray-200 font-medium mb-7">Pagedone</h4>
-                            <ul className=" transition-all duration-500">
-                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Home</a>
-                                </li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">About</a>
-                                </li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Pricing</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Features</a></li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Pro
-                                    Version</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="w-full  text-left">
-                            <h4 className="text-xl text-gray-900 font-medium mb-7">Products</h4>
-                            <ul className=" transition-all duration-500">
-                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Figma UI
-                                    System</a></li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Icons
-                                    Assets</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Responsive Blocks</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Components Library</a></li>
-                                <li className=""><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Plugin
-                                    Guide</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="w-full  text-left">
-                            <h4 className="text-xl text-gray-900 font-medium mb-7">Resources</h4>
-                            <ul className="  transition-all duration-500">
-                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">FAQs</a>
-                                </li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Quick
-                                    Start</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Documentation</a></li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">User
-                                    Guide</a></li>
-                                <li className=""><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Plugin
-                                    Guide</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="w-full text-left">
-                            <h4 className="text-xl text-gray-900 font-medium mb-7">Blogs</h4>
-                            <ul className="transition-all duration-500">
-                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">News</a>
-                                </li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Tips &
-                                    Tricks</a></li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">New
-                                    Updates</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Events</a></li>
-                                <li className=""><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Editorial</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="w-full text-left">
-                            <h4 className="text-xl text-gray-900 font-medium mb-7">Support</h4>
-                            <ul className="transition-all duration-500">
-                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Customer
-                                    Support</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">Cookies</a></li>
-                                <li className="mb-6"><a href="javascript:;"
-                                    className=" text-gray-600 hover:text-gray-900">License</a></li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Terms &
-                                    Conditions</a></li>
-                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Privacy
-                                    Policy</a></li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div className="py-7 border-t border-gray-200">
-                    <div className="flex items-center justify-center flex-col sm:justify-between sm:flex-row">
-                        <span className="text-sm text-gray-500 ">©<a href="https://pagedone.io/">pagedone</a>2024, All rights reserved.</span>
-                        <div className="flex mt-6 space-x-4 sm:justify-center sm:mt-0 ">
+                            <h4 className="text-3xl text-black-200 font-medium mb-7">Arinon</h4>
+                            <p className="text font-normal text-gray-600 hover:text-gray-900">A103 xyz street, New York, NY535022</p>
+                            <p className="text-sm font-bold mt-4">Phone: <span className="font-medium">+1 5589 55488 55</span></p>
+                            <p className="text-sm font-bold">Email: <span className="font-medium">info@example.com</span></p>
+                            <p className="text-lg font-bold mt-10">Follow Us</p>
+                            <div className="flex space-x-4 pt-4 sm:justify-center sm:mt-0 ">
                             <a href="javascript:;"
                                 className="group w-9 h-9 transition-all duration-500 rounded-full border border-gray-300 flex justify-center items-center hover:border-indigo-600">
                                 <svg className="transition-all duration-500 text-gray-700 group-hover:text-indigo-600"
@@ -137,6 +57,69 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </div>
+                        </div>
+
+                        <div className="w-full  text-left">
+                            <h4 className="text-xl text-gray-900 font-medium mb-7">Useful Links</h4>
+                            <ul className=" transition-all duration-500">
+                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Home</a></li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">About Us</a></li>
+                                <li className="mb-6"><a href="javascript:;"
+                                    className=" text-gray-600 hover:text-gray-900">Services</a></li>
+                                <li className="mb-6"><a href="javascript:;"
+                                    className=" text-gray-600 hover:text-gray-900">Terms Of service</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full  text-left">
+                            <h4 className="text-xl text-gray-900 font-medium mb-7">Our Services</h4>
+                            <ul className="  transition-all duration-500">
+                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Web Design</a>
+                                </li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Web Development</a></li>
+                                <li className="mb-6"><a href="javascript:;"
+                                    className=" text-gray-600 hover:text-gray-900">Documentation</a></li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Product Management</a></li>
+                                <li className=""><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Marketing</a></li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full text-left">
+                            <h4 className="text-xl text-gray-900 font-medium mb-7">Technologies</h4>
+                            <ul className="transition-all duration-500">
+                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Dot Net</a>
+                                </li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">JavaScript</a></li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Node.Js</a></li>
+                                <li className="mb-6"><a href="javascript:;"
+                                    className=" text-gray-600 hover:text-gray-900">Events</a></li>
+                                <li className=""><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Angular</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div className="w-full text-left">
+                            <h4 className="text-xl text-gray-900 font-medium mb-7">Support</h4>
+                            <ul className="transition-all duration-500">
+                                <li className="mb-6"><a href="javascript:;" className="text-gray-600 hover:text-gray-900">Customer
+                                    Support</a></li>
+                                <li className="mb-6"><a href="javascript:;"
+                                    className=" text-gray-600 hover:text-gray-900">Cookies</a></li>
+                                <li className="mb-6"><a href="javascript:;"
+                                    className=" text-gray-600 hover:text-gray-900">License</a></li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Terms &
+                                    Conditions</a></li>
+                                <li className="mb-6"><a href="javascript:;" className=" text-gray-600 hover:text-gray-900">Privacy
+                                    Policy</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div className="py-7 border-t border-gray-200">
+                    <div className="flex items-center justify-center flex-col sm:justify-between sm:flex-row">
+                        <span className="text-sm text-gray-500 ">©<a href="https://pagedone.io/">pagedone</a>2024, All rights reserved.</span>
                     </div>
                 </div>
             </div>
